@@ -17,7 +17,7 @@ sudo mkdir /ghost-content
 ```
 GMAIL ?= '<gmail_accont>'
 GMAIL_PASSWORD ?= '<gmail_password>'
-URL ?= '<hostname>' # ghost.example.com
+HOSTNAME ?= '<hostname>' # ghost.example.com
 REGISTRY ?= '<docker_username>/'
 ```
 
