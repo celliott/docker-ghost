@@ -9,9 +9,10 @@ OVERRIDE="/ghost-content"
 IMAGES="content/images"
 THEMES="content/themes"
 
+# change permissions on /data dir
 chown -R postgres:postgres /data
 
-# start db if /data exists, otherwise initialize a new db
+# start db if /data is not empty, otherwise initialize a new db
 if [ "$(ls -A /data)" ]; then
 	echo "/data exists. starting postgres"
 	su - postgres -c "/usr/lib/postgresql/9.3/bin/pg_ctl -w -D /data start"
