@@ -20,13 +20,13 @@ config = {
 		},
 		database: {
 			client: 'pg',
-				connection: {
-					host     : '0.0.0.0',
-					user     : 'postgres',
-					password : '',
-					database : 'ghost',
-					charset  : 'utf8'
-				}
+			connection: {
+				host     : '0.0.0.0',
+				user     : 'postgres',
+				password : '',
+				database : 'ghost',
+				charset  : 'utf8'
+			}
 		},
 		server: {
 			host: '0.0.0.0',
