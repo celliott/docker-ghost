@@ -33,4 +33,3 @@ CMD /start.sh && /bin/bash -l
 
 # expose ports
 EXPOSE 2368
-EXPOSE 5432
