@@ -8,7 +8,7 @@ a docker container for ghost with postgres db and gmail for email. based off of 
 sudo mkdir /data
 ```
 
-* create a /ghost-content folder at the root of your vm. used for ghost persistence
+* create a /ghost-content folder at the root of your vm. used for ghost-content persistence
 ```
 sudo mkdir /ghost-content
 ```
