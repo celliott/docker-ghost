@@ -9,7 +9,7 @@ HOSTNAME ?= '<hostname>'	# required. just hostname leave off http://
 # docker settings
 REPOSITORY ?= '<docker_username>/'	# required. notice the trailing slash
 ENVS = -e GMAIL=$(GMAIL) -e GMAIL_PASSWORD=$(GMAIL_PASSWORD) -e HOSTNAME=$(HOSTNAME)
-PORTS = -p 80:2368 -p 5432:5432
+PORTS = -p 80:2368
 CONTAINER = ghost
 VOLUMES = -v /data:/data -v /ghost-content:/ghost-content
 
