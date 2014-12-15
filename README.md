@@ -1,4 +1,4 @@
-Ghost 
+docker-ghost 
 =====
 
 a docker container for ghost with postgres db and gmail for email. based off of dockerfile/ghost - http://dockerfile.github.io/#/ghost
