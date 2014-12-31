@@ -28,9 +28,9 @@ kill :
 	docker kill $(CONTAINER)
 	docker rm $(CONTAINER)
 restart :
-        docker kill $(CONTAINER)
-        docker rm $(CONTAINER)
-        docker run --name $(CONTAINER) -i -d $(PORTS) $(ENVS) $(VOLUMES) -t $(REPOSITORY)$(CONTAINER)
+	docker kill $(CONTAINER)
+	docker rm $(CONTAINER)
+	docker run --name $(CONTAINER) -i -d $(PORTS) $(ENVS) $(VOLUMES) -t $(REPOSITORY)$(CONTAINER)
 attach:
 	docker attach $(CONTAINER)
 
