@@ -20,7 +20,7 @@ container :
 	docker build -t $(REPOSITORY)$(CONTAINER) .
 
 run :
-	docker run --name $(CONTAINER) -i -d $(PORTS) $(ENVS) $(VOLUMES) -t $(REPOSITORY)$(CONTAINER)
+	docker run --restart=always --name $(CONTAINER) -i -d $(PORTS) $(ENVS) $(VOLUMES) -t $(REPOSITORY)$(CONTAINER)
 stop :
 	docker stop $(CONTAINER)
 	docker rm $(CONTAINER)
