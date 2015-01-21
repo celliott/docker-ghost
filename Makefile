@@ -35,4 +35,7 @@ attach:
 	docker attach $(CONTAINER)
 
 tail:
-	docker logs -f $(CONTAINER)	
+	docker logs -f $(CONTAINER)
+
+test:	
+	[ -e ./Dockerfile ] && echo "Dockerfile found" || exit 1
